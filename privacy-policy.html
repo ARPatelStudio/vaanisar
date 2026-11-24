@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Privacy Policy — VaaniSar | Amit Patel (ARK PATEL STUDIO)</title>
+  <meta
+    name="description"
+    content="Official Privacy Policy for VaaniSar (com.arkpatelstudio.vaanisar), Universal AI Document &amp; Voice Reader developed by Amit Patel (ARK PATEL STUDIO), India."
+  />
+  <meta property="og:title" content="Privacy Policy — VaaniSar" />
+  <meta
+    property="og:description"
+    content="Learn how VaaniSar by Amit Patel (ARK PATEL STUDIO, India) protects your documents, voice playback, and optional AI privacy."
+  />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --surface-subtle: #f0f4f9;
+      --text: #161b22;
+      --text-muted: #57606a;
+      --border: #d8dee4;
+      --accent: #1a56db;
+      --accent-soft: rgba(26, 86, 219, 0.1);
+      --accent-text: #1442a8;
+      --success-bg: rgba(22, 163, 74, 0.12);
+      --success-text: #15803d;
+      --shadow: 0 1px 3px rgba(16, 24, 40, 0.06), 0 8px 24px rgba(16, 24, 40, 0.04);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --max-width: 880px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root[data-theme="auto"] {
+        --bg: #0b0f17;
+        --surface: #121824;
+        --surface-subtle: #1a2233;
+        --text: #e6edf3;
+        --text-muted: #9aa7b8;
+        --border: #263145;
+        --accent: #60a5fa;
+        --accent-soft: rgba(96, 165, 250, 0.14);
+        --accent-text: #93c5fd;
+        --success-bg: rgba(74, 222, 128, 0.14);
+        --success-text: #86efac;
+        --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #0b0f17;
+      --surface: #121824;
+      --surface-subtle: #1a2233;
+      --text: #e6edf3;
+      --text-muted: #9aa7b8;
+      --border: #263145;
+      --accent: #60a5fa;
+      --accent-soft: rgba(96, 165, 250, 0.14);
+      --accent-text: #93c5fd;
+      --success-bg: rgba(74, 222, 128, 0.14);
+      --success-text: #86efac;
+      --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans",
+        "Noto Sans Devanagari", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px 18px 56px;
+    }
+
+    /* Top Bar */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #ffffff;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      margin: 2px 0 0;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 13px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      border-color: var(--accent);
+      background: var(--surface-subtle);
+      outline: none;
+    }
+
+    /* Hero Card */
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      background: var(--success-bg);
+      color: var(--success-text);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.6rem, 3.4vw, 2.15rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-lead {
+      margin: 0 0 18px;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+      gap: 10px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .meta-item {
+      background: var(--surface-subtle);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .meta-value {
+      font-size: 0.88rem;
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    /* Summary Cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .summary-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .summary-card h2 {
+      margin: 0 0 6px;
+      font-size: 0.94rem;
+      color: var(--accent-text);
+    }
+
+    .summary-card p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Optional Hindi Quick Summary */
+    details.hindi-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    details.hindi-box summary {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.94rem;
+      color: var(--accent-text);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    details.hindi-box summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.hindi-box[open] summary {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    details.hindi-box ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    details.hindi-box li + li {
+      margin-top: 6px;
+    }
+
+    /* Quick Jump Navigation */
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .toc a {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .toc a:hover,
+    .toc a:focus-visible {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent-text);
+      text-decoration: none;
+    }
+
+    /* Policy Body */
+    .policy-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .policy-section {
+      padding-bottom: 22px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 20px;
+    }
+
+    .policy-section:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .policy-section h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+      color: var(--accent-text);
+      line-height: 1.3;
+    }
+
+    .policy-section p {
+      margin: 0 0 10px;
+      font-size: 0.94rem;
+    }
+
+    .policy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-section ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+      font-size: 0.94rem;
+    }
+
+    .policy-section li + li {
+      margin-top: 6px;
+    }
+
+    /* Responsive Table */
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 520px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    th {
+      background: var(--surface-subtle);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.84em;
+      background: var(--surface-subtle);
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
+    .badge-none {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: var(--success-bg);
+      color: var(--success-text);
+    }
+
+    .contact-box {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin-top: 10px;
+    }
+
+    .contact-box p {
+      margin: 0 0 6px;
+    }
+
+    .contact-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.83rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+      .hero,
+      .policy-card {
+        padding: 20px 16px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #111111;
+      }
+      .topbar-actions,
+      .toc,
+      details.hindi-box {
+        display: none !important;
+      }
+      .hero,
+      .summary-card,
+      .policy-card {
+        box-shadow: none;
+        border-color: #cccccc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">VS</div>
+        <div>
+          <p class="brand-title">VaaniSar</p>
+          <p class="brand-sub">Universal AI Document &amp; Voice Reader • Amit Patel (ARK PATEL STUDIO, India)</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button type="button" class="btn" id="themeToggle" aria-label="Toggle color theme">
+          <span id="themeIcon" aria-hidden="true">◐</span>
+          <span id="themeLabel">Theme</span>
+        </button>
+        <button type="button" class="btn" id="printBtn" aria-label="Print or save privacy policy as PDF">
+          Print / PDF
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="policy-heading">
+      <span class="pill">Privacy-First • Made in India • 100% On-Device Library</span>
+      <h1 id="policy-heading">Privacy Policy</h1>
+      <p class="hero-lead">
+        This Privacy Policy explains how <strong>VaaniSar</strong> (developed by
+        <strong>Amit Patel</strong> under <strong>ARK PATEL STUDIO</strong>, <strong>India</strong>)
+        handles your documents, voice narration, permissions, and optional AI features. It applies
+        to all distributions of VaaniSar, including Amazon Appstore, Samsung Galaxy Store, and
+        Xiaomi GetApps.
+      </p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Application Name</span>
+          <span class="meta-value">VaaniSar</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Package ID</span>
+          <span class="meta-value"><code>com.arkpatelstudio.vaanisar</code></span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Developer</span>
+          <span class="meta-value">Amit Patel</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Studio / Publisher</span>
+          <span class="meta-value">ARK PATEL STUDIO</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Country</span>
+          <span class="meta-value">India</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Effective &amp; Last Updated</span>
+          <span class="meta-value">November 24, 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-grid" aria-label="Data safety highlights">
+      <article class="summary-card">
+        <h2>No Account or Tracking</h2>
+        <p>
+          No sign-up, no analytics trackers, and no personal data collected or uploaded to
+          ARK PATEL STUDIO servers.
+        </p>
+      </article>
+      <article class="summary-card">
+        <h2>Local-First Storage</h2>
+        <p>
+          Documents, bookmarks, favorites, reading progress, OCR, and offline voice synthesis stay
+          privately on your device.
+        </p>
+      </article>
+      <article class="summary-card">
+        <h2>Optional User-Triggered AI</h2>
+        <p>
+          Internet is used only when you import a Web URL or invoke Gemini AI features with your
+          own API key over HTTPS.
+        </p>
+      </article>
+    </section>
+
+    <details class="hindi-box">
+      <summary>
+        <span>संक्षिप्त हिंदी सार (Hindi Privacy Summary — Tap to Expand)</span>
+        <span aria-hidden="true">▾</span>
+      </summary>
+      <ul>
+        <li>
+          <strong>कोई अकाउंट या डेटा संग्रह नहीं:</strong> VaaniSar (डेवलपर: Amit Patel — ARK PATEL
+          STUDIO, India) कोई लॉगिन नहीं मांगता और आपका कोई भी डॉक्यूमेंट या व्यक्तिगत डेटा हमारे
+          सर्वर पर अपलोड नहीं करता।
+        </li>
+        <li>
+          <strong>ऑफ़लाइन OCR और आवाज़:</strong> PDF, EPUB, DOCX, फोटो और कैमरा स्कैन का
+          हिंदी/अंग्रेज़ी OCR तथा Text-to-Speech (और WAV ऑडियो एक्सपोर्ट) पूरी तरह आपके फ़ोन पर ही
+          प्रोसेस होता है।
+        </li>
+        <li>
+          <strong>वैकल्पिक इंटरनेट और Gemini AI:</strong> इंटरनेट का उपयोग केवल तभी होता है जब आप
+          कोई वेब लिंक (URL) इम्पोर्ट करते हैं या अपनी Gemini API Key से AI Summary, Q&amp;A,
+          VaaniCast या Study Mode चलाते हैं।
+        </li>
+        <li>
+          <strong>पूरा नियंत्रण:</strong> आप ऐप के अंदर से कभी भी कोई डॉक्यूमेंट, बुकमार्क, API Key
+          या टेम्परेरी कैश डिलीट कर सकते हैं।
+        </li>
+      </ul>
+    </details>
+
+    <nav class="toc" aria-label="Privacy policy sections">
+      <a href="#data-storage">1. Local Storage</a>
+      <a href="#ocr-voice">2. On-Device OCR &amp; Voice</a>
+      <a href="#ai-web">3. Optional AI &amp; Web</a>
+      <a href="#permissions">4. App Permissions</a>
+      <a href="#third-party">5. Third-Party Services</a>
+      <a href="#user-control">6. User Control &amp; Deletion</a>
+      <a href="#children">7. Children's Privacy</a>
+      <a href="#contact">8. Updates &amp; Contact</a>
+    </nav>
+
+    <main class="policy-card">
+      <section id="data-storage" class="policy-section">
+        <h2>1. Data Collection &amp; Local Storage</h2>
+        <p>
+          VaaniSar does not require account registration and does not collect, sell, rent, or
+          upload your personal information to Amit Patel or ARK PATEL STUDIO servers.
+        </p>
+        <p>
+          All content you open or import—including PDF, EPUB, DOCX, TXT, HTML, Markdown, CSV, JSON,
+          Images, Web Articles, WhatsApp shared texts/files, and Camera Scans—along with your
+          bookmarks, favorites, appearance settings, voice preferences, and reading progress are
+          stored strictly locally inside your device's private application storage
+          (<code>filesDir</code> and <code>SharedPreferences</code>).
+        </p>
+      </section>
+
+      <section id="ocr-voice" class="policy-section">
+        <h2>2. On-Device OCR, Offline Voice &amp; Audio Export</h2>
+        <ul>
+          <li>
+            <strong>On-Device Text Recognition (OCR):</strong> Hindi (Devanagari) and English text
+            extraction from PDF pages, gallery images, and scanned pages is performed locally on
+            your device using on-device Google ML Kit models.
+          </li>
+          <li>
+            <strong>Camera Scan-to-Voice:</strong> When you tap <em>Scan Page</em>, VaaniSar
+            delegates photo capture to your device's built-in camera app via secure
+            <code>FileProvider</code> temporary URIs. Captured temporary image files are
+            automatically deleted immediately after OCR text extraction completes.
+          </li>
+          <li>
+            <strong>Offline Voice Narration &amp; WAV Export:</strong> Document reading, Sleep
+            Timer, lock-screen controls, and VaaniCast dual-voice playback use Android's installed
+            Text-to-Speech engine. Offline <code>.wav</code> audio files are generated locally and
+            saved to your device's <code>Music/VaaniSar</code> folder (via Android MediaStore) or
+            shared with other apps only when you explicitly tap <em>Save to Music</em> or
+            <em>Share Audio</em>.
+          </li>
+        </ul>
+      </section>
+
+      <section id="ai-web" class="policy-section">
+        <h2>3. Optional AI Features, Voice Input &amp; Web Articles</h2>
+        <ul>
+          <li>
+            <strong>Optional Gemini AI Tools:</strong> If you choose to use <em>AI Summary</em>,
+            <em>Saral (ELI5)</em>, <em>Ask Q&amp;A</em>, <em>VaaniCast Podcast</em>, or
+            <em>Study Mode (Quiz &amp; Flashcards)</em>, you supply your own Google AI Studio
+            Gemini API key. Your API key is stored locally on your device in private app
+            preferences and transmitted securely via HTTPS request headers
+            (<code>x-goog-api-key</code>) directly to Google's Gemini API together with only the
+            active document or page text and your prompt.
+          </li>
+          <li>
+            <strong>Optional Web Article Reader:</strong> When you paste or share an
+            <code>http://</code> or <code>https://</code> link, VaaniSar connects directly to that
+            website solely to download and extract clean readable article text for your offline
+            library.
+          </li>
+          <li>
+            <strong>Optional Hands-Free Voice Questions:</strong> When you tap the microphone
+            button in the Ask Q&amp;A tab, VaaniSar launches Android's system speech recognition
+            dialog (<code>RecognizerIntent</code>). VaaniSar does not record or store raw
+            microphone audio in the background.
+          </li>
+        </ul>
+      </section>
+
+      <section id="permissions" class="policy-section">
+        <h2>4. Android Permissions Transparency</h2>
+        <p>
+          VaaniSar requests only the minimum Android permissions required for its core reading and
+          audio features, and requests runtime permissions in context when needed:
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Purpose in VaaniSar</th>
+                <th>Required / Scope</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>INTERNET</code></td>
+                <td>
+                  Used solely when you import a Web URL article or invoke optional Gemini AI
+                  features with your API key over HTTPS.
+                </td>
+                <td>User-Initiated Only</td>
+              </tr>
+              <tr>
+                <td><code>FOREGROUND_SERVICE</code> &amp;<br /><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
+                <td>
+                  Keeps document voice reading, lock-screen MediaSession controls, Bluetooth headset
+                  buttons, and the Sleep Timer running reliably when your screen is locked.
+                </td>
+                <td>Active Audio Playback</td>
+              </tr>
+              <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>
+                  Displays lock-screen and notification shade playback controls (Play, Pause,
+                  Previous, Next, Stop, and Sleep Timer status) on Android 13+.
+                </td>
+                <td>Optional Runtime Prompt</td>
+              </tr>
+              <tr>
+                <td><code>CAMERA</code> &amp; Broad External Storage</td>
+                <td>
+                  <span class="badge-none">Not Requested</span> — VaaniSar uses Android's system
+                  document picker, system camera intent, and Scoped Storage MediaStore instead.
+                </td>
+                <td>Zero Access Requested</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="third-party" class="policy-section">
+        <h2>5. Third-Party Services &amp; Libraries</h2>
+        <p>
+          VaaniSar does not embed third-party behavioral tracking, profiling, or data-broker SDKs.
+          The app relies on the following platform and optional services:
+        </p>
+        <ul>
+          <li>
+            <strong>Google ML Kit (On-Device Text Recognition v2 Devanagari):</strong> Processes
+            image and PDF page text locally on your device.
+          </li>
+          <li>
+            <strong>Google Gemini API (Optional, User-Initiated):</strong> Used only when you
+            enter your own API key and trigger an AI action. Data sent to Google's API is governed
+            by the
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+              Google Privacy Policy
+            </a>
+            and
+            <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">
+              Gemini API Additional Terms of Service
+            </a>.
+          </li>
+          <li>
+            <strong>Open-Source Local Libraries:</strong> Jetpack Compose, AndroidX, Kotlin
+            Coroutines, and Apache POI (DOCX parsing) run entirely offline inside the application.
+          </li>
+        </ul>
+      </section>
+
+      <section id="user-control" class="policy-section">
+        <h2>6. User Control, Data Retention &amp; Deletion</h2>
+        <p>
+          Because all VaaniSar data lives locally on your device, you retain complete control at
+          all times:
+        </p>
+        <ul>
+          <li>
+            <strong>Delete Documents &amp; Bookmarks:</strong> Remove any document from your
+            Library to immediately delete its saved internal copy and associated bookmarks, or
+            clear bookmarks inside any reader screen.
+          </li>
+          <li>
+            <strong>Clear Temporary Cache:</strong> Use the in-app <em>Storage &amp; Cache</em>
+            manager on the Library screen to delete exported WAV cache files, temporary scan
+            leftovers, orphaned files, and in-memory AI caches with one tap.
+          </li>
+          <li>
+            <strong>Remove API Keys:</strong> Open the Key icon inside the <em>VaaniSar AI</em>
+            sheet and tap <em>Clear</em> to erase your saved Gemini API key from device storage.
+          </li>
+          <li>
+            <strong>Complete Removal:</strong> Uninstalling VaaniSar permanently removes all
+            private application files, preferences, and bookmarks from your device.
+          </li>
+        </ul>
+      </section>
+
+      <section id="children" class="policy-section">
+        <h2>7. Children's Privacy</h2>
+        <p>
+          VaaniSar is a general-audience document reader and study productivity application. It is
+          not directed at children under the age of 13 (or the applicable age of digital consent
+          in your jurisdiction), and Amit Patel / ARK PATEL STUDIO does not knowingly collect
+          personal information from children. If you believe a child has shared personal data with
+          us via support email, please contact us so we can promptly delete it.
+        </p>
+      </section>
+
+      <section id="contact" class="policy-section">
+        <h2>8. Policy Changes &amp; Developer Contact</h2>
+        <p>
+          We may update this Privacy Policy from time to time—for example, if new features or
+          optional advertising/monetization services are added in a future release. Any updates
+          will be published on this page with an updated <em>Effective &amp; Last Updated</em>
+          date and reflected inside the in-app Privacy Policy dialog.
+        </p>
+        <div class="contact-box">
+          <p><strong>Developer:</strong> Amit Patel</p>
+          <p><strong>Studio / Publisher:</strong> ARK PATEL STUDIO</p>
+          <p><strong>Country:</strong> India</p>
+          <p><strong>Application:</strong> VaaniSar (<code>com.arkpatelstudio.vaanisar</code>)</p>
+          <p>
+            <strong>Support &amp; Privacy Email:</strong>
+            <a href="mailto:arkpatelstudio@gmail.com">arkpatelstudio@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="copyrightYear">2026</span> Amit Patel • ARK PATEL STUDIO (India). All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    "use strict";
+    (() => {
+      const STORAGE_KEY = "vaanisar_policy_theme";
+      const root = document.documentElement;
+      const toggleBtn = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+      const themeLabel = document.getElementById("themeLabel");
+      const printBtn = document.getElementById("printBtn");
+      const yearEl = document.getElementById("copyrightYear");
+
+      if (yearEl) {
+        yearEl.textContent = String(Math.max(2026, new Date().getFullYear()));
+      }
+
+      const systemDarkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      const getSavedTheme = () => {
+        try {
+          return localStorage.getItem(STORAGE_KEY);
+        } catch {
+          return null;
+        }
+      };
+
+      const saveTheme = (value) => {
+        try {
+          localStorage.setItem(STORAGE_KEY, value);
+        } catch {
+          // Ignore restricted storage environments (e.g., private webviews)
+        }
+      };
+
+      const isCurrentlyDark = () => {
+        const attr = root.getAttribute("data-theme");
+        if (attr === "dark") return true;
+        if (attr === "light") return false;
+        return systemDarkQuery.matches;
+      };
+
+      const syncToggleUi = () => {
+        const dark = isCurrentlyDark();
+        if (themeIcon) themeIcon.textContent = dark ? "☀" : "☾";
+        if (themeLabel) themeLabel.textContent = dark ? "Light" : "Dark";
+      };
+
+      const saved = getSavedTheme();
+      if (saved === "light" || saved === "dark") {
+        root.setAttribute("data-theme", saved);
+      }
+      syncToggleUi();
+
+      systemDarkQuery.addEventListener("change", () => {
+        if (root.getAttribute("data-theme") === "auto") {
+          syncToggleUi();
+        }
+      });
+
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", () => {
+          const next = isCurrentlyDark() ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          saveTheme(next);
+          syncToggleUi();
+        });
+      }
+
+      if (printBtn) {
+        printBtn.addEventListener("click", () => window.print());
+      }
+    })();
+  </script>
+</body>
+</html>
